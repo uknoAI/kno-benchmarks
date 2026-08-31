@@ -1,0 +1,23 @@
+# Generated inputs and scratch stores. Never committed: they are a
+# deterministic function of (N, M) and the harness regenerates them.
+/tmp/
+/.work/
+*.db
+*.db-wal
+*.db-shm
+cases.jsonl
+pool.jsonl
+
+# Downloaded release artifacts.
+/kno
+/kno_*.tar.gz
+/kno_*.zip
+/checksums.txt
+
+# Go
+/bin/
+*.test
+*.out
+
+# Editors / OS
+.DS_Store
