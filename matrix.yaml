@@ -1,0 +1,121 @@
+# The matrix, committed before any data exists.
+#
+# Every result records this file's SHA-256. You cannot decide after seeing the
+# numbers which configurations you meant to run: a figure whose matrix hash is
+# absent from this repository's history is not citable.
+#
+# This is an OFAT sweep, not a full cross. A base cell is measured for every
+# stage, and each axis is varied one at a time from that base. A full cross of
+# 4 stages x 4 N x 3 M x 3 concurrency x 7 repetitions is 1008 runs, which is
+# not a nightly. The consequence is a rule about language, not just about
+# scheduling: any statement derived from this file must say "varying N at
+# M=500, concurrency=8" and must never say "across the matrix".
+schema_version: 1
+track: bootstrap
+
+defaults:
+  agent: "fake:"
+  goal: "exact-match"
+  # Seven repetitions: odd, so the median is a datum rather than an average of
+  # two; small enough to finish overnight; large enough for a defensible IQR.
+  repetitions: 7
+  # One warm-up, published and labelled, excluded from summary statistics
+  # under rule EX-1 in METHODOLOGY.md.
+  warmups: 1
+
+base_cell:
+  assets: 100
+  cases: 500
+  concurrency: 8
+
+configurations:
+  # Stages are driven as one chained pipeline per repetition — value needs a
+  # baseline run id, select needs a value run id, export needs a select run
+  # id — and each stage is timed separately. A stage's figure therefore
+  # excludes the stages before it.
+  - id: base
+    axis: base
+    assets: 100
+    cases: 500
+    concurrency: 8
+    stages: [baseline, value, select, export]
+
+  # N (Pool size). The claim is a scaling *shape*, and log spacing is the
+  # minimum that distinguishes linear from superlinear.
+  - id: n-10
+    axis: assets
+    assets: 10
+    cases: 500
+    concurrency: 8
+    stages: [baseline, value, select, export]
+  - id: n-1000
+    axis: assets
+    assets: 1000
+    cases: 500
+    concurrency: 8
+    stages: [baseline, value, select, export]
+  - id: n-10000
+    axis: assets
+    assets: 10000
+    cases: 500
+    concurrency: 8
+    stages: [baseline, value, select, export]
+    deferred: true
+    deferred_reason: >-
+      At the measured cost of the N=1000 cell, one repetition of N=10000 is
+      roughly nine minutes, and eight repetitions of it would dominate a
+      hosted-runner schedule whose entire purpose is to measure that runner's
+      variance cheaply. Carried here rather than deleted so the gap in the
+      N axis is visible: the bootstrap fits its scaling shape over three
+      points, not four, and no fit from this file may be extrapolated to
+      N=10000.
+
+  # M (Evals size).
+  - id: m-50
+    axis: cases
+    assets: 100
+    cases: 50
+    concurrency: 8
+    stages: [baseline, value, select, export]
+  - id: m-5000
+    axis: cases
+    assets: 100
+    cases: 5000
+    concurrency: 8
+    stages: [baseline, value, select, export]
+
+  # Concurrency. With `fake:` there is no provider wait time, so this axis
+  # isolates lock contention, SQLite write serialization and scheduler
+  # overhead rather than the ability to wait in parallel.
+  - id: c-1
+    axis: concurrency
+    assets: 100
+    cases: 500
+    concurrency: 1
+    stages: [baseline, value, select, export]
+  - id: c-64
+    axis: concurrency
+    assets: 100
+    cases: 500
+    concurrency: 64
+    stages: [baseline, value, select, export]
+
+  # The memory probe. CLAUDE.md in uknoAI/kno says "a 1M-case eval set must not
+  # load into RAM — iter.Seq is load-bearing". That is the most load-bearing
+  # self-claim the project makes, so it gets its own cell and its own metric:
+  # peak resident set size, not time.
+  - id: mem-1m
+    axis: memory
+    assets: 1
+    cases: 1000000
+    concurrency: 8
+    stages: [baseline]
+    repetitions: 3
+    warmups: 0
+    note: >-
+      Three repetitions rather than seven: one repetition costs minutes and
+      writes a ~100 MB input file, and peak RSS is far less variable than wall
+      time. Three is stated here, before any data, so that the smaller n is a
+      committed decision and not an outcome. No warm-up: the metric is a
+      ceiling, and a warm-up would only lower the file-cache cost of the run
+      that is excluded anyway.
