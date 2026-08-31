@@ -1,0 +1,28 @@
+# PR CI's dry run. It proves the harness executes, writes a schema-valid
+# result, and drives all four stages. It measures nothing citable: the track
+# is `dry-run`, and the summarizer skips dry runs entirely.
+#
+# N=2, M=2 is the plan's committed dry-run cell, and it is verified to work:
+# kno completes all four stages, marking every valuation UNDERPOWERED, which
+# is the correct answer at that size and is exactly why no figure comes out.
+schema_version: 1
+track: dry-run
+
+defaults:
+  agent: "fake:"
+  goal: "exact-match"
+  repetitions: 1
+  warmups: 0
+
+base_cell:
+  assets: 2
+  cases: 2
+  concurrency: 2
+
+configurations:
+  - id: dry-run
+    axis: dry-run
+    assets: 2
+    cases: 2
+    concurrency: 2
+    stages: [baseline, value, select, export]

@@ -1,0 +1,3092 @@
+{
+  "schema_version": 1,
+  "track": "local",
+  "run_id": "3bd59b4e518a",
+  "citable": false,
+  "citable_reason": "no host in this repository is a committed measurement machine; see RUNNER.md",
+  "dry_run": false,
+  "partial": false,
+  "budget_aborted": false,
+  "budget_usd": 0,
+  "spent_usd": 0,
+  "harness_version": "0.1.0-bootstrap",
+  "matrix_sha256": "a890975b599544b140b7899a4ccd49f6c502f897cd4f064b01da49c4c3b12b7c",
+  "started_at": "2026-08-31T18:40:06.207346Z",
+  "finished_at": "2026-08-31T19:11:33.367424Z",
+  "kno": {
+    "version": "v0.1.2",
+    "version_output": "kno version 0.1.2 (3bafe133cbd0dc48961099691fd9706b402d5336, 2026-08-31T17:46:14Z)",
+    "archive": "/tmp/knorel/kno_0.1.2_darwin_arm64.tar.gz",
+    "archive_sha256": "4f05cec1b5bc0e8ba6bc6f6945be09a46567c4059ea2ea7f64273e14335dc33c",
+    "checksums_verified": true,
+    "checksum_source": "/tmp/knorel/checksums.txt (kno_0.1.2_darwin_arm64.tar.gz)"
+  },
+  "machine": {
+    "machine_id": "54af966ebe110ca3",
+    "runner": "local:darwin-arm64",
+    "os": "darwin",
+    "arch": "arm64",
+    "cpu_model": "Apple M3 Max",
+    "cpu_cores": 16,
+    "mem_total_bytes": 68719476736,
+    "kernel": "Darwin 25.5.0",
+    "citable": false
+  },
+  "repetitions": [
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:40:06.208069Z",
+      "host_before": {
+        "load_avg_1": 7.78,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 7.64,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 71.829833,
+          "peak_rss_bytes": 37388288,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184006-3d55c451da0c",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6234.486958,
+          "peak_rss_bytes": 50855936,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184006-bca045bede05",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.868709,
+          "peak_rss_bytes": 37748736,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184012-15825d269271",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 23.208417,
+          "peak_rss_bytes": 35880960,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184012-5ffb910ca7bf",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:40:12.566392Z",
+      "host_before": {
+        "load_avg_1": 7.64,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 7.59,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 159.002542,
+          "peak_rss_bytes": 37404672,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184012-c6053d81c1c0",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 5960.150166,
+          "peak_rss_bytes": 50724864,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184012-3b428ced15cc",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 245.607875,
+          "peak_rss_bytes": 37453824,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184018-8de25f27515d",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 66.986666,
+          "peak_rss_bytes": 36306944,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184018-8e1ab92f48bc",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:40:19.00368Z",
+      "host_before": {
+        "load_avg_1": 7.59,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 7.11,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 88.200583,
+          "peak_rss_bytes": 37945344,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184019-8f67c947ed44",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 7094.354334,
+          "peak_rss_bytes": 50462720,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184019-fcf9391d6140",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 37.269834,
+          "peak_rss_bytes": 37732352,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184026-ee421f2dca16",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 26.4105,
+          "peak_rss_bytes": 35766272,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184026-eec032cfae74",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:40:26.25991Z",
+      "host_before": {
+        "load_avg_1": 7.11,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.78,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 73.296625,
+          "peak_rss_bytes": 37765120,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184026-1cff916e8cc8",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6575.375125,
+          "peak_rss_bytes": 50528256,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184026-8a432b57fd95",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 280.841709,
+          "peak_rss_bytes": 38535168,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184033-124d8b15af9c",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 25.900167,
+          "peak_rss_bytes": 36782080,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184033-5594470a2c90",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:40:33.220711Z",
+      "host_before": {
+        "load_avg_1": 6.78,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.35,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 78.708583,
+          "peak_rss_bytes": 37257216,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184033-dab72ab746d3",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6586.03425,
+          "peak_rss_bytes": 50888704,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184033-b2b3ca3975fd",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 861.548583,
+          "peak_rss_bytes": 38043648,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184040-afc29c791cd8",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 27.685,
+          "peak_rss_bytes": 36601856,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184040-e9a5ea526e5f",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:40:40.7804Z",
+      "host_before": {
+        "load_avg_1": 6.35,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 7.05,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 87.804917,
+          "peak_rss_bytes": 37175296,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184040-b709dbc63844",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6561.231084,
+          "peak_rss_bytes": 50905088,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184040-0d086132dd71",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 50.119417,
+          "peak_rss_bytes": 37961728,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184047-56abfbf74d94",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 25.261542,
+          "peak_rss_bytes": 35815424,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184047-6405ed1c317b",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:40:47.510653Z",
+      "host_before": {
+        "load_avg_1": 7.05,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.64,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 84.1225,
+          "peak_rss_bytes": 37191680,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184047-6e168077415e",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6875.054209,
+          "peak_rss_bytes": 50921472,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184047-9da38cf9bf57",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 28.17325,
+          "peak_rss_bytes": 37453824,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184054-3a2782bfa901",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 24.416416,
+          "peak_rss_bytes": 36192256,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184054-2dbf08afff73",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:40:54.527904Z",
+      "host_before": {
+        "load_avg_1": 6.64,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 263.905,
+          "peak_rss_bytes": 37093376,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184054-dc762f8866ef",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6661.818166,
+          "peak_rss_bytes": 50544640,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184054-a477c916a5c9",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 24.822625,
+          "peak_rss_bytes": 38273024,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184101-32810634e148",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 25.253833,
+          "peak_rss_bytes": 35848192,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184101-382bc7eea6af",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 0,
+      "warmup": true,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:41:01.515811Z",
+      "host_before": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 86.321291,
+          "peak_rss_bytes": 36880384,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184101-3ab0de817f34",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 382.443,
+          "peak_rss_bytes": 45121536,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184101-7b9a09514b7b",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.053666,
+          "peak_rss_bytes": 33603584,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184102-29321a1499cd",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 24.686292,
+          "peak_rss_bytes": 33701888,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184102-a92cdd1bee38",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 1,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:41:02.037951Z",
+      "host_before": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 211.536125,
+          "peak_rss_bytes": 37699584,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184102-ec9627eb89e6",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 1054.0035,
+          "peak_rss_bytes": 44531712,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184102-4fc58f5a1f52",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.896125,
+          "peak_rss_bytes": 33488896,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184103-81bbac52ce63",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 23.271708,
+          "peak_rss_bytes": 33259520,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184103-94fad0b26081",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 2,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:41:03.356167Z",
+      "host_before": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 99.584875,
+          "peak_rss_bytes": 38322176,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184103-286ea895af09",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 579.162625,
+          "peak_rss_bytes": 45236224,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184103-f0544f3cb8eb",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 618.090333,
+          "peak_rss_bytes": 33325056,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184104-6741fdec5a5d",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 25.164625,
+          "peak_rss_bytes": 33357824,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184104-acd1914021ca",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 3,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:41:04.68355Z",
+      "host_before": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 81.178791,
+          "peak_rss_bytes": 37421056,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184104-12827069dfdc",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 359.276417,
+          "peak_rss_bytes": 43991040,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184104-1ad4f133eaba",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 22.177625,
+          "peak_rss_bytes": 33521664,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184105-64f4bc18e36c",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 21.257625,
+          "peak_rss_bytes": 32784384,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184105-e8f3de25700d",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 4,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:41:05.172482Z",
+      "host_before": {
+        "load_avg_1": 6.48,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.44,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 75.406542,
+          "peak_rss_bytes": 37617664,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184105-b04c1cb5f0c7",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 674.083625,
+          "peak_rss_bytes": 44302336,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184105-a86d47901ae1",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 22.992708,
+          "peak_rss_bytes": 33456128,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184105-7be9acf5c4a7",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 175.287,
+          "peak_rss_bytes": 32440320,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184105-334fa3f2fc1e",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 5,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:41:06.12855Z",
+      "host_before": {
+        "load_avg_1": 6.44,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.44,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 88.090666,
+          "peak_rss_bytes": 37863424,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184106-6e55109046bb",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 348.348958,
+          "peak_rss_bytes": 44679168,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184106-d219df70354b",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 20.402125,
+          "peak_rss_bytes": 32489472,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184106-ac23f26211a9",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 20.233292,
+          "peak_rss_bytes": 32866304,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184106-c959898dc212",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 6,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:41:06.622209Z",
+      "host_before": {
+        "load_avg_1": 6.44,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.44,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 73.359875,
+          "peak_rss_bytes": 36831232,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184106-c5c1058a13f5",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 825.423584,
+          "peak_rss_bytes": 43925504,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184106-a9b4d7c487ff",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 21.846083,
+          "peak_rss_bytes": 32833536,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184107-cd923dbfb1bd",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.949,
+          "peak_rss_bytes": 32784384,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184107-ee88103f21e7",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 7,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:41:07.570387Z",
+      "host_before": {
+        "load_avg_1": 6.44,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.44,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 78.579542,
+          "peak_rss_bytes": 37945344,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184107-c1b9dec8c91e",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 340.692708,
+          "peak_rss_bytes": 44171264,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184107-60ed921f7fff",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 20.63725,
+          "peak_rss_bytes": 32964608,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184108-0afaf1ffb861",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 20.609625,
+          "peak_rss_bytes": 32538624,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184108-406f8a154605",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 0,
+      "warmup": true,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:41:08.037193Z",
+      "host_before": {
+        "load_avg_1": 6.44,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 4.95,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 72.983667,
+          "peak_rss_bytes": 37421056,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184108-7b054bc32ad0",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 73684.240375,
+          "peak_rss_bytes": 96747520,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184108-5dc4039bd08f",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 54.212708,
+          "peak_rss_bytes": 64241664,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184221-eb8e36abf743",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 42.481791,
+          "peak_rss_bytes": 58261504,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184221-b3f1e8a2d9b6",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 1,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:42:21.900825Z",
+      "host_before": {
+        "load_avg_1": 4.95,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 7.34,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 193.505667,
+          "peak_rss_bytes": 37240832,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184221-e31c80c60e71",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 86362.141,
+          "peak_rss_bytes": 90456064,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184222-ae4b8acabc7e",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 67.005584,
+          "peak_rss_bytes": 66584576,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184348-f0c0639ae737",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 43.243792,
+          "peak_rss_bytes": 59162624,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184348-b879107cbc85",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 2,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:43:48.581448Z",
+      "host_before": {
+        "load_avg_1": 7.34,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.04,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 94.046,
+          "peak_rss_bytes": 37502976,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184348-39605c31a904",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 74882.651459,
+          "peak_rss_bytes": 91144192,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184348-c39eda2e045c",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 51.128959,
+          "peak_rss_bytes": 66174976,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184503-aec738b0d795",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 39.6175,
+          "peak_rss_bytes": 59260928,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184503-97fefa255a1a",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 3,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:45:03.662272Z",
+      "host_before": {
+        "load_avg_1": 6.04,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 4.21,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 78.498709,
+          "peak_rss_bytes": 37568512,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184503-087eeedcf8ad",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 55633.642833,
+          "peak_rss_bytes": 91078656,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184503-dd993b9be9bb",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 51.75875,
+          "peak_rss_bytes": 66125824,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184559-9d4672603afd",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 37.277291,
+          "peak_rss_bytes": 58867712,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184559-63b4ccc6b9ae",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 4,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:45:59.477413Z",
+      "host_before": {
+        "load_avg_1": 4.21,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.79,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 74.205625,
+          "peak_rss_bytes": 37240832,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184559-fe4deea81b17",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 51439.790834,
+          "peak_rss_bytes": 94355456,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184559-7878bed0dc93",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 47.722334,
+          "peak_rss_bytes": 66338816,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184651-137e1985c40f",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 36.8615,
+          "peak_rss_bytes": 61341696,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184651-0a228aaf00be",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 5,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:46:51.087779Z",
+      "host_before": {
+        "load_avg_1": 6.79,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 5.81,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 77.504042,
+          "peak_rss_bytes": 37502976,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184651-bb0ea1430f4a",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 61866.553542,
+          "peak_rss_bytes": 94715904,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184651-7bf01b7c008e",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 132.713666,
+          "peak_rss_bytes": 66928640,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184753-232b113fb881",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 42.155084,
+          "peak_rss_bytes": 59490304,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184753-d78139c0a36c",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 6,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:47:53.220271Z",
+      "host_before": {
+        "load_avg_1": 5.81,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 9.94,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 103.236666,
+          "peak_rss_bytes": 37896192,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184753-8940884f2f54",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 64514.690792,
+          "peak_rss_bytes": 94224384,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184753-6f27bacb3865",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 55.305167,
+          "peak_rss_bytes": 66256896,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184857-01397757fc75",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 44.40125,
+          "peak_rss_bytes": 58998784,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184857-cbf12dd93748",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 7,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:48:57.95157Z",
+      "host_before": {
+        "load_avg_1": 9.94,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 98.317208,
+          "peak_rss_bytes": 37715968,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184857-4d913ca347c2",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 83925.581417,
+          "peak_rss_bytes": 90701824,
+          "exit_code": 0,
+          "kno_run_id": "20260831T184858-8cbe7f4a8fa0",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 74.253333,
+          "peak_rss_bytes": 66977792,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185022-0207425790c9",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 57.638209,
+          "peak_rss_bytes": 56426496,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185022-75a39051385f",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:50:22.130226Z",
+      "host_before": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 47.922125,
+          "peak_rss_bytes": 33669120,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185022-7781314a1e2e",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 752.035542,
+          "peak_rss_bytes": 45154304,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185022-a9978624a675",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.588791,
+          "peak_rss_bytes": 34045952,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185022-20dfb744aa85",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 23.258417,
+          "peak_rss_bytes": 33456128,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185022-e3d0434e044d",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:50:22.991576Z",
+      "host_before": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 30.548833,
+          "peak_rss_bytes": 34652160,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185023-5019e71e1823",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 382.725917,
+          "peak_rss_bytes": 45187072,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185023-b602a0ff939a",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 21.472542,
+          "peak_rss_bytes": 33390592,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185023-b9fb28077b8c",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 20.423875,
+          "peak_rss_bytes": 32866304,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185023-9a27757d151e",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:50:23.452192Z",
+      "host_before": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 28.186042,
+          "peak_rss_bytes": 34013184,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185023-cf7e52fac032",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 598.833041,
+          "peak_rss_bytes": 44187648,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185023-c97b1c0de4d6",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 27.583958,
+          "peak_rss_bytes": 34242560,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185024-a8e7785c64c2",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.639083,
+          "peak_rss_bytes": 32964608,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185024-96103e31a17e",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:50:24.134558Z",
+      "host_before": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 33.134917,
+          "peak_rss_bytes": 34537472,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185024-e2ea9f7ee36a",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 387.184459,
+          "peak_rss_bytes": 44793856,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185024-6da481911cfd",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 22.807375,
+          "peak_rss_bytes": 33570816,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185024-0ff0b739bd5b",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 21.497625,
+          "peak_rss_bytes": 32456704,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185024-bbcf7e671d7c",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:50:24.604311Z",
+      "host_before": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 28.362458,
+          "peak_rss_bytes": 34226176,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185024-530586e503d9",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 832.088625,
+          "peak_rss_bytes": 44564480,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185024-73a7f4fbcca5",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.527208,
+          "peak_rss_bytes": 33800192,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185025-620d5362670a",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 21.862792,
+          "peak_rss_bytes": 33128448,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185025-deace2cad67a",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:50:25.515162Z",
+      "host_before": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 30.320584,
+          "peak_rss_bytes": 35340288,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185025-31f349778d90",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 369.995334,
+          "peak_rss_bytes": 45039616,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185025-3bb0f66ac7ad",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 21.394042,
+          "peak_rss_bytes": 32735232,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185025-0262ebbcd0fa",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 20.353125,
+          "peak_rss_bytes": 32636928,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185025-1cbec93e11c1",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:50:25.962573Z",
+      "host_before": {
+        "load_avg_1": 6.8,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.58,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 419.763416,
+          "peak_rss_bytes": 34553856,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185026-34d85c2c1059",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 370.113542,
+          "peak_rss_bytes": 45219840,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185026-415e6cbf5885",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 22.826166,
+          "peak_rss_bytes": 33374208,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185026-4ea06d6e3f32",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 21.513875,
+          "peak_rss_bytes": 33079296,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185026-2c78e1e7910c",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:50:26.801654Z",
+      "host_before": {
+        "load_avg_1": 6.58,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.58,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 34.344875,
+          "peak_rss_bytes": 33521664,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185026-0a67e0ee46c2",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 489.411334,
+          "peak_rss_bytes": 45383680,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185026-5c0d521bd0dc",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.217792,
+          "peak_rss_bytes": 33832960,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185027-cb6e7c3b6088",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 21.937458,
+          "peak_rss_bytes": 32505856,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185027-442e47a597ea",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:50:27.379455Z",
+      "host_before": {
+        "load_avg_1": 6.58,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.27,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 580.503375,
+          "peak_rss_bytes": 44433408,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185027-c541bb5976fe",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 76071.5185,
+          "peak_rss_bytes": 97648640,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185028-74f0d714b2fa",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 370.790458,
+          "peak_rss_bytes": 63356928,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185144-6be369b4ed5b",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 37.306,
+          "peak_rss_bytes": 60112896,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185144-f477f7ac3a9e",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:51:44.445883Z",
+      "host_before": {
+        "load_avg_1": 6.27,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 7.13,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 553.610375,
+          "peak_rss_bytes": 44023808,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185144-bbddfee5466e",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 71266.355042,
+          "peak_rss_bytes": 96518144,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185145-640846e49b1c",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 58.035291,
+          "peak_rss_bytes": 64602112,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185256-558c210159ba",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 42.227167,
+          "peak_rss_bytes": 61456384,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185256-8b35483c7073",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:52:56.387234Z",
+      "host_before": {
+        "load_avg_1": 7.13,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 7.91,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 841.731083,
+          "peak_rss_bytes": 43810816,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185256-1f56b1020325",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 59848.136833,
+          "peak_rss_bytes": 94142464,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185257-e3a6b5885c6f",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 66.460041,
+          "peak_rss_bytes": 63848448,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185357-a33d47adb64b",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 34.021209,
+          "peak_rss_bytes": 53559296,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185357-40dfc87a4827",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:53:57.195133Z",
+      "host_before": {
+        "load_avg_1": 7.91,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 4.16,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 1066.399166,
+          "peak_rss_bytes": 44269568,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185357-d2887399ad8e",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 67405.566334,
+          "peak_rss_bytes": 92553216,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185358-f5baf0b39a0d",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 51.716708,
+          "peak_rss_bytes": 64503808,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185505-f3d787f2092b",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 39.134375,
+          "peak_rss_bytes": 59817984,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185505-1d6aa8dae153",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:55:05.767481Z",
+      "host_before": {
+        "load_avg_1": 4.16,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 7.79,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 522.839542,
+          "peak_rss_bytes": 44318720,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185505-96108e0e5230",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 73941.023,
+          "peak_rss_bytes": 97304576,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185506-deee7beee1eb",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 50.623458,
+          "peak_rss_bytes": 64307200,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185620-9a41c0233264",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 35.259875,
+          "peak_rss_bytes": 56229888,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185620-f63fef1ac5c5",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:56:20.326833Z",
+      "host_before": {
+        "load_avg_1": 7.79,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.05,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 617.801375,
+          "peak_rss_bytes": 44204032,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185620-767fafebefc1",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 65769.98875,
+          "peak_rss_bytes": 99237888,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185620-8b27ef1a9814",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 44.511709,
+          "peak_rss_bytes": 63094784,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185726-a4073d77b0ea",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 33.756542,
+          "peak_rss_bytes": 55771136,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185726-8a5da97975a0",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:57:26.80099Z",
+      "host_before": {
+        "load_avg_1": 6.05,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 4.28,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 421.05775,
+          "peak_rss_bytes": 44695552,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185726-b198b48641cb",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 72096.574458,
+          "peak_rss_bytes": 92684288,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185727-803d9f5a793d",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 60.478375,
+          "peak_rss_bytes": 64192512,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185839-0ed3d4ae0993",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 34.914708,
+          "peak_rss_bytes": 59604992,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185839-27d114da52c0",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:58:39.422647Z",
+      "host_before": {
+        "load_avg_1": 4.28,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.16,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 1120.160125,
+          "peak_rss_bytes": 43974656,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185839-e0a5dcee5416",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 63495.796208,
+          "peak_rss_bytes": 96010240,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185840-7c5c8691ca57",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 47.177542,
+          "peak_rss_bytes": 63422464,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185944-9458cb2e719b",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 35.824959,
+          "peak_rss_bytes": 54050816,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185944-36a075a7617f",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:59:44.133219Z",
+      "host_before": {
+        "load_avg_1": 3.16,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.23,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 86.767416,
+          "peak_rss_bytes": 37126144,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185944-38ac9e84dd6c",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 5881.8455,
+          "peak_rss_bytes": 50495488,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185944-dcd8d61490b2",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 24.849792,
+          "peak_rss_bytes": 37486592,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185950-2a8d1530c0f4",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.903375,
+          "peak_rss_bytes": 35651584,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185950-5096ff2c85d0",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:59:50.155174Z",
+      "host_before": {
+        "load_avg_1": 3.23,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.57,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 77.842,
+          "peak_rss_bytes": 38092800,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185950-f8a6b7d83db1",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6120.630959,
+          "peak_rss_bytes": 50184192,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185950-3b4cac9faed9",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 25.120834,
+          "peak_rss_bytes": 38518784,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185956-dd745a6ea959",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 23.3395,
+          "peak_rss_bytes": 35782656,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185956-525c4dc17136",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-08-31T18:59:56.407534Z",
+      "host_before": {
+        "load_avg_1": 3.57,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.45,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 81.05925,
+          "peak_rss_bytes": 37142528,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185956-c7a7e3c8a0fd",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6741.374291,
+          "peak_rss_bytes": 49938432,
+          "exit_code": 0,
+          "kno_run_id": "20260831T185956-ed47e2a85f62",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 26.807,
+          "peak_rss_bytes": 38436864,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190003-628f41e086b0",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 25.48875,
+          "peak_rss_bytes": 35815424,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190003-77d27a99ef25",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:00:03.288464Z",
+      "host_before": {
+        "load_avg_1": 3.45,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.41,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 77.905875,
+          "peak_rss_bytes": 37879808,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190003-e85dd6b6b085",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6232.278583,
+          "peak_rss_bytes": 49889280,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190003-75a5eec21a0a",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 24.284333,
+          "peak_rss_bytes": 38092800,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190009-147ccad918f1",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.409875,
+          "peak_rss_bytes": 35454976,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190009-ac7a2f233014",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:00:09.651626Z",
+      "host_before": {
+        "load_avg_1": 3.41,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.3,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 74.782333,
+          "peak_rss_bytes": 37060608,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190009-c5539fc614d8",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 4524.970333,
+          "peak_rss_bytes": 49676288,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190009-589dad5ead5c",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.509875,
+          "peak_rss_bytes": 37961728,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190014-9d7ba90469c4",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.140375,
+          "peak_rss_bytes": 35192832,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190014-49ba689c3035",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:00:14.302466Z",
+      "host_before": {
+        "load_avg_1": 3.3,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.19,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 88.206166,
+          "peak_rss_bytes": 37224448,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190014-bba86335e535",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6335.701542,
+          "peak_rss_bytes": 50610176,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190014-ecc2c92730d4",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 24.668916,
+          "peak_rss_bytes": 36962304,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190020-47102c3940f9",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.80825,
+          "peak_rss_bytes": 35274752,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190020-eb387c315edc",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:00:20.779008Z",
+      "host_before": {
+        "load_avg_1": 3.19,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.02,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 76.72,
+          "peak_rss_bytes": 37715968,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190020-96a86e07026a",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 7316.522708,
+          "peak_rss_bytes": 50757632,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190020-f72154b6e074",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 24.609834,
+          "peak_rss_bytes": 37732352,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190028-fcc136ed7569",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 26.444541,
+          "peak_rss_bytes": 35848192,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190028-acecf5ecf494",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:00:28.228717Z",
+      "host_before": {
+        "load_avg_1": 3.02,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.02,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 419.025125,
+          "peak_rss_bytes": 37699584,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190028-8bf97c0e5e37",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6842.8025,
+          "peak_rss_bytes": 50675712,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190028-120646be2ed0",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 24.05125,
+          "peak_rss_bytes": 37453824,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190035-7dff6b0a801b",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 21.991541,
+          "peak_rss_bytes": 35553280,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190035-89ad52aae555",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:00:35.545524Z",
+      "host_before": {
+        "load_avg_1": 3.02,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 2.87,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 76.383875,
+          "peak_rss_bytes": 38289408,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190035-0f1e0aba35c9",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 5987.263375,
+          "peak_rss_bytes": 51265536,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190035-448446717d52",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.906917,
+          "peak_rss_bytes": 37994496,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190041-f0693103ba28",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.005,
+          "peak_rss_bytes": 34832384,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190041-d424d77314b7",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:00:41.660228Z",
+      "host_before": {
+        "load_avg_1": 2.87,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.44,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 74.817209,
+          "peak_rss_bytes": 38617088,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190041-73738c7f8ebe",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 9098.738333,
+          "peak_rss_bytes": 51101696,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190041-f9b2a4189a84",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 33.050917,
+          "peak_rss_bytes": 38125568,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190050-4321d0b761e3",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.910666,
+          "peak_rss_bytes": 35667968,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190050-00db1e117c10",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:00:50.898449Z",
+      "host_before": {
+        "load_avg_1": 3.44,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.37,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 77.092958,
+          "peak_rss_bytes": 38584320,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190050-06a913aa6ca3",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6562.234334,
+          "peak_rss_bytes": 51412992,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190050-0ea961891ea8",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.777375,
+          "peak_rss_bytes": 37814272,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190057-692d37792a87",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 21.832917,
+          "peak_rss_bytes": 35700736,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190057-17a1ada2a519",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:00:57.588596Z",
+      "host_before": {
+        "load_avg_1": 3.37,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 4.1,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 710.633458,
+          "peak_rss_bytes": 37748736,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190057-e45886fe9c76",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 8300.805917,
+          "peak_rss_bytes": 52166656,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190058-0ac4e0bbe58a",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.620167,
+          "peak_rss_bytes": 37486592,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190106-0bf36b29c5cc",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 96.085625,
+          "peak_rss_bytes": 35799040,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190106-0593952f69db",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:01:06.725006Z",
+      "host_before": {
+        "load_avg_1": 4.1,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.86,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 77.738542,
+          "peak_rss_bytes": 38125568,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190106-3970c3f05b6d",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 8916.603541,
+          "peak_rss_bytes": 51724288,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190106-9e9342f6d36f",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 23.321459,
+          "peak_rss_bytes": 37912576,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190115-6f9e59a9d92d",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 21.741208,
+          "peak_rss_bytes": 35422208,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190115-27618e387637",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:01:15.769785Z",
+      "host_before": {
+        "load_avg_1": 3.86,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.65,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 94.977708,
+          "peak_rss_bytes": 37879808,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190115-737c35221fef",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 6415.445958,
+          "peak_rss_bytes": 51920896,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190115-dd652995c096",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 26.268208,
+          "peak_rss_bytes": 37601280,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190122-cda9e4756c2f",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 133.611334,
+          "peak_rss_bytes": 35667968,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190122-7cf23aa2a052",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:01:22.446471Z",
+      "host_before": {
+        "load_avg_1": 3.65,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.44,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 84.8395,
+          "peak_rss_bytes": 38109184,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190122-fa4c42a27d66",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 7334.384667,
+          "peak_rss_bytes": 51625984,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190122-c485cbfb5c6f",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 30.618833,
+          "peak_rss_bytes": 37535744,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190129-96a42f48f14a",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.723584,
+          "peak_rss_bytes": 35307520,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190129-11ff67fe6b10",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:01:29.928895Z",
+      "host_before": {
+        "load_avg_1": 3.44,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.52,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 155.225833,
+          "peak_rss_bytes": 38387712,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190129-7be995a8c2e9",
+          "spend_usd": 0
+        },
+        {
+          "stage": "value",
+          "wall_ms": 8990.428083,
+          "peak_rss_bytes": 52117504,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190130-c4ea54174b4d",
+          "spend_usd": null
+        },
+        {
+          "stage": "select",
+          "wall_ms": 24.621917,
+          "peak_rss_bytes": 38060032,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190139-3950c0aabe0e",
+          "spend_usd": null
+        },
+        {
+          "stage": "export",
+          "wall_ms": 22.933416,
+          "peak_rss_bytes": 35504128,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190139-52b8d222f0ce",
+          "spend_usd": null
+        }
+      ]
+    },
+    {
+      "config_id": "mem-1m",
+      "axis": "memory",
+      "rep": 0,
+      "warmup": false,
+      "assets": 1,
+      "cases": 1000000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:01:39.859971Z",
+      "host_before": {
+        "load_avg_1": 3.52,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 6.86,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 205728.546792,
+          "peak_rss_bytes": 185401344,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190141-8121e3af7f3c",
+          "spend_usd": 0
+        }
+      ]
+    },
+    {
+      "config_id": "mem-1m",
+      "axis": "memory",
+      "rep": 1,
+      "warmup": false,
+      "assets": 1,
+      "cases": 1000000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:05:05.59524Z",
+      "host_before": {
+        "load_avg_1": 6.86,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 4.26,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 204390.04275,
+          "peak_rss_bytes": 189235200,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190507-2b5de6bdc02c",
+          "spend_usd": 0
+        }
+      ]
+    },
+    {
+      "config_id": "mem-1m",
+      "axis": "memory",
+      "rep": 2,
+      "warmup": false,
+      "assets": 1,
+      "cases": 1000000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-08-31T19:08:29.99579Z",
+      "host_before": {
+        "load_avg_1": 4.26,
+        "free_mem_bytes": 0
+      },
+      "host_after": {
+        "load_avg_1": 3.5,
+        "free_mem_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 183347.044125,
+          "peak_rss_bytes": 189448192,
+          "exit_code": 0,
+          "kno_run_id": "20260831T190831-321e59e9a9c1",
+          "spend_usd": 0
+        }
+      ]
+    }
+  ]
+}

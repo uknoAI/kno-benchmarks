@@ -1,0 +1,106 @@
+name: bootstrap
+
+# The hosted-runner bootstrap. This is the whole of the current phase.
+#
+# It runs the committed matrix on `ubuntu-latest` — a different physical
+# machine every time — and appends the result. It publishes nothing about kno.
+# Its output is a measured answer to one question: how much does a hosted
+# runner vary when it measures the same thing twice? After roughly four weeks
+# that answer exists in this repository, with an n and a spread, and the
+# hardware question in RUNNER.md is decided on it in either direction.
+#
+# `fake:` only. No provider key is referenced anywhere in this file, and there
+# is no code path here that can spend money.
+on:
+  schedule:
+    # 03:17 UTC daily. Off the hour on purpose: the top of the hour is the
+    # busiest slot on shared runners, and this job is measuring the runner.
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+    inputs:
+      kno_version:
+        description: 'Release tag to measure'
+        required: false
+        default: 'v0.1.2'
+
+permissions:
+  contents: write
+
+concurrency:
+  # Never two measurements at once: a second job on the same runner would be
+  # measuring the first one.
+  group: bootstrap
+  cancel-in-progress: false
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      KNO_VERSION: ${{ inputs.kno_version || 'v0.1.2' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+          cache: true
+
+      - name: Fetch and verify the released kno binary
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release download "$KNO_VERSION" --repo uknoAI/kno \
+            --pattern "kno_${KNO_VERSION#v}_linux_amd64.tar.gz" \
+            --pattern checksums.txt --dir dist
+          tar -xzf "dist/kno_${KNO_VERSION#v}_linux_amd64.tar.gz" -C dist kno
+          dist/kno --version
+
+      - name: Record the host
+        run: |
+          echo "::group::host"
+          uname -a; nproc; free -m || true
+          grep -m1 'model name' /proc/cpuinfo || true
+          cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 2>/dev/null || true
+          echo "::endgroup::"
+
+      - name: Measure the committed matrix
+        run: |
+          set -euo pipefail
+          go run ./cmd/knobench run \
+            --bin dist/kno \
+            --matrix matrix.yaml \
+            --track bootstrap \
+            --runner "github-hosted:ubuntu-latest" \
+            --archive "dist/kno_${KNO_VERSION#v}_linux_amd64.tar.gz" \
+            --checksums dist/checksums.txt
+
+      - name: Regenerate the derived artifacts
+        run: go run ./cmd/knobench summarize
+
+      - name: Append the result
+        run: |
+          set -euo pipefail
+          git config user.name  "kno-benchmarks[bot]"
+          git config user.email "kno-benchmarks@users.noreply.github.com"
+          git add results SUMMARY.md
+          if git diff --cached --quiet; then
+            echo "nothing to append" >&2
+            exit 0
+          fi
+          # Every run is appended, including the failed and the unstable ones.
+          # Dropping a noisy result is cherry-picking with extra steps.
+          git commit -s -m "chore(results): bootstrap measurement of ${KNO_VERSION} on ubuntu-latest"
+          # Rebase rather than merge: the results tree only ever gains files,
+          # so a concurrent append can never conflict with this one.
+          #
+          # When the append-only Ruleset lands (METHODOLOGY.md section 4), a
+          # direct push to main stops being possible and this step becomes a
+          # branch plus an auto-merged PR. It is written this way today because
+          # the ruleset does not exist yet, and pretending otherwise is the
+          # error this repository is about.
+          git pull --rebase origin main
+          git push origin HEAD:main

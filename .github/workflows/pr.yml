@@ -1,0 +1,112 @@
+name: pr
+
+# Validation only. This workflow measures nothing citable and must never be
+# able to reach a provider key or a self-hosted runner. `knobench lint`
+# asserts the second property over every workflow file in this repository,
+# including this one.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history: the summarizer dates every exclusion rule from git,
+          # and the append-only check diffs the results tree against the base.
+          fetch-depth: 0
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+          cache: true
+
+      - name: Build
+        run: go build ./...
+
+      - name: Format
+        run: |
+          unformatted="$(gofmt -l .)"
+          if [ -n "$unformatted" ]; then
+            echo "gofmt would change:" >&2
+            echo "$unformatted" >&2
+            exit 1
+          fi
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Unit tests
+        run: go test -race -shuffle=on ./...
+
+      - name: No Go benchmark may exist in this repository
+        run: |
+          if grep -rqn '^func Benchmark' --include='*_test.go' .; then
+            echo "This repository must contain no 'func Benchmark'." >&2
+            echo "uknoAI/kno's make bench-diff is a tripwire on exactly that pattern," >&2
+            echo "and the separation between that micro gate and this macro instrument" >&2
+            echo "is the reason this repository exists separately. See METHODOLOGY.md." >&2
+            exit 1
+          fi
+          echo "no Go benchmark present"
+
+      - name: Lint the matrix and the workflows
+        run: go run ./cmd/knobench lint
+
+      - name: Generated artifacts are up to date
+        run: go run ./cmd/knobench summarize --check
+
+      - name: results/ is append-only
+        run: ./scripts/append-only-check.sh origin/${{ github.base_ref || 'main' }}
+
+  dry-run:
+    # Proves the harness drives a real released binary end to end. N=2, M=2,
+    # `fake:` only, track `dry-run`, and the result is deliberately not
+    # committed: it measures nothing.
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+          cache: true
+
+      - name: Fetch the released kno binary
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KNO_VERSION: v0.1.2
+        run: |
+          set -euo pipefail
+          gh release download "$KNO_VERSION" --repo uknoAI/kno \
+            --pattern "kno_${KNO_VERSION#v}_linux_amd64.tar.gz" \
+            --pattern checksums.txt --dir dist
+          tar -xzf "dist/kno_${KNO_VERSION#v}_linux_amd64.tar.gz" -C dist kno
+
+      - name: Dry run
+        env:
+          KNO_VERSION: v0.1.2
+        run: |
+          set -euo pipefail
+          go run ./cmd/knobench run \
+            --bin dist/kno \
+            --matrix testdata/matrix-dry-run.yaml \
+            --track dry-run \
+            --runner "github-hosted:ubuntu-latest" \
+            --results "$RUNNER_TEMP/dry-run-results" \
+            --archive "dist/kno_${KNO_VERSION#v}_linux_amd64.tar.gz" \
+            --checksums dist/checksums.txt
+          test -n "$(find "$RUNNER_TEMP/dry-run-results" -name '*.json')" \
+            || { echo "the dry run wrote no result" >&2; exit 1; }
+          echo "dry run wrote a result; it is discarded, because it measures nothing"
