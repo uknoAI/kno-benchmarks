@@ -19,6 +19,7 @@ An exclusion whose rule was committed **after** an observation is refused, and t
 
 | Result file | Track | kno | Started | Runner | Machine | Reps | Digest verified | Partial |
 |---|---|---|---|---|---|---|---|---|
+| `results/bootstrap/v0.1.2/20260901T084117Z-537c727b3606.json` | bootstrap | v0.1.2 | 2026-09-01T08:41Z | github-hosted:ubuntu-latest | `a205f9a83711` | 59 | true | false |
 | `results/local/v0.1.2/20260831T184006Z-3bd59b4e518a.json` | local | v0.1.2 | 2026-08-31T18:40Z | local:darwin-arm64 | `54af966ebe11` | 59 | true | false |
 
 ## Within-run spread (one machine repeating itself)
@@ -85,6 +86,11 @@ This is the variance of one host measuring the same configuration `n` times in a
 | `n-1000` | select | wall_ms | 8 | 54.8 ms | 51.6 ms | 68.8 ms | 47.7 ms | 132.7 ms | 42.1% | exclusion-refused:EX-1, unstable, warmup-included(1) |
 | `n-1000` | value | peak_rss_bytes | 8 | 88.4 MiB | 86.8 MiB | 90.1 MiB | 86.3 MiB | 92.3 MiB | 2.5% | exclusion-refused:EX-1, warmup-included(1) |
 | `n-1000` | value | wall_ms | 8 | 69.10 s | 60.31 s | 77.14 s | 51.44 s | 86.36 s | 18.5% | exclusion-refused:EX-1, unstable, warmup-included(1) |
+
+No figure was produced for these, and the reason is recorded rather than the row deleted:
+
+- **failed-reps(3), insufficient-n(0 of 3, need 3)** — 1 combination(s): `mem-1m`/baseline/wall_ms
+- **failed-reps(8), insufficient-n(0 of 7, need 5)** — 7 combination(s): `base`/baseline/wall_ms, `c-1`/baseline/wall_ms, `c-64`/baseline/wall_ms, `m-5000`/baseline/wall_ms, `m-50`/baseline/wall_ms, `n-1000`/baseline/wall_ms, `n-10`/baseline/wall_ms
 
 ## Between-run spread (across runs)
 
