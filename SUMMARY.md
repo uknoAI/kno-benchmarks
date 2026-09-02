@@ -20,6 +20,7 @@ An exclusion whose rule was committed **after** an observation is refused, and t
 | Result file | Track | kno | Started | Runner | Machine | Reps | Digest verified | Partial |
 |---|---|---|---|---|---|---|---|---|
 | `results/bootstrap/v0.1.2/20260901T084117Z-537c727b3606.json` | bootstrap | v0.1.2 | 2026-09-01T08:41Z | github-hosted:ubuntu-latest | `a205f9a83711` | 59 | true | false |
+| `results/bootstrap/v0.1.2/20260902T075652Z-e1e6d4e8a6a0.json` | bootstrap | v0.1.2 | 2026-09-02T07:56Z | github-hosted:ubuntu-latest | `a205f9a83711` | 59 | true | false |
 | `results/local/v0.1.2/20260831T184006Z-3bd59b4e518a.json` | local | v0.1.2 | 2026-08-31T18:40Z | local:darwin-arm64 | `54af966ebe11` | 59 | true | false |
 
 ## Within-run spread (one machine repeating itself)
@@ -89,8 +90,8 @@ This is the variance of one host measuring the same configuration `n` times in a
 
 No figure was produced for these, and the reason is recorded rather than the row deleted:
 
-- **failed-reps(3), insufficient-n(0 of 3, need 3)** — 1 combination(s): `mem-1m`/baseline/wall_ms
-- **failed-reps(8), insufficient-n(0 of 7, need 5)** — 7 combination(s): `base`/baseline/wall_ms, `c-1`/baseline/wall_ms, `c-64`/baseline/wall_ms, `m-5000`/baseline/wall_ms, `m-50`/baseline/wall_ms, `n-1000`/baseline/wall_ms, `n-10`/baseline/wall_ms
+- **failed-reps(3), insufficient-n(0 of 3, need 3)** — 2 combination(s): `mem-1m`/baseline/wall_ms, `mem-1m`/baseline/wall_ms
+- **failed-reps(8), insufficient-n(0 of 7, need 5)** — 14 combination(s): `base`/baseline/wall_ms, `base`/baseline/wall_ms, `c-1`/baseline/wall_ms, `c-1`/baseline/wall_ms, `c-64`/baseline/wall_ms, `c-64`/baseline/wall_ms, `m-5000`/baseline/wall_ms, `m-5000`/baseline/wall_ms, `m-50`/baseline/wall_ms, `m-50`/baseline/wall_ms, `n-1000`/baseline/wall_ms, `n-1000`/baseline/wall_ms, `n-10`/baseline/wall_ms, `n-10`/baseline/wall_ms
 
 ## Between-run spread (across runs)
 
