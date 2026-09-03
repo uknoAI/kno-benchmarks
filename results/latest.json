@@ -3,8 +3,8 @@
   "status": "no-citable-figures",
   "status_detail": "This repository has published no citable measurement of kno. The hosted-runner bootstrap is measuring the runner's own variance; until that gate closes, every figure here describes the machine, not the software. See METHODOLOGY.md and RUNNER.md.",
   "derived_from": {
-    "result_files": 3,
-    "newest_result_at": "2026-09-02T07:56:52Z",
+    "result_files": 4,
+    "newest_result_at": "2026-09-03T08:05:19Z",
     "matrix_sha256": [
       "a890975b599544b140b7899a4ccd49f6c502f897cd4f064b01da49c4c3b12b7c"
     ]
