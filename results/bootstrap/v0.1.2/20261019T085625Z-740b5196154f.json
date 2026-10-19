@@ -1,0 +1,1807 @@
+{
+  "schema_version": 1,
+  "track": "bootstrap",
+  "run_id": "740b5196154f",
+  "citable": false,
+  "citable_reason": "bootstrap track: measures the hosted runner's own variance, not kno's performance; no figure here is citable",
+  "dry_run": false,
+  "partial": false,
+  "budget_aborted": false,
+  "budget_usd": 0,
+  "spent_usd": 0,
+  "harness_version": "0.1.0-bootstrap",
+  "matrix_sha256": "a890975b599544b140b7899a4ccd49f6c502f897cd4f064b01da49c4c3b12b7c",
+  "started_at": "2026-10-19T08:56:25.324680076Z",
+  "finished_at": "2026-10-19T08:56:26.338800138Z",
+  "kno": {
+    "version": "v0.1.2",
+    "version_output": "kno version 0.1.2 (3bafe133cbd0dc48961099691fd9706b402d5336, 2026-08-31T17:46:14Z)",
+    "archive": "dist/kno_0.1.2_linux_amd64.tar.gz",
+    "archive_sha256": "c2c72ba6a11b2ec91cf10c23b250ec6b609e1d7b474b6e95e3733a24a5ca00b7",
+    "checksums_verified": true,
+    "checksum_source": "dist/checksums.txt (kno_0.1.2_linux_amd64.tar.gz)"
+  },
+  "machine": {
+    "machine_id": "399794935aded36b",
+    "runner": "github-hosted:ubuntu-latest",
+    "os": "linux",
+    "arch": "amd64",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "cpu_cores": 4,
+    "mem_total_bytes": 16766414848,
+    "kernel": "Linux 6.17.0-1022-azure",
+    "citable": false
+  },
+  "repetitions": [
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.326106387Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.17661,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.326427268Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.183374,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.326734453Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.18166,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.327089088Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.175018,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.327401593Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.170439,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.327927358Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.158247,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.328646835Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.168276,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "base",
+      "axis": "base",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.328940495Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.188623,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 0,
+      "warmup": true,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.330205444Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.145873,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 1,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.330458027Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.162394,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 2,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.330753701Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.162404,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 3,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.33106793Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.158437,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 4,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.331346682Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.159949,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 5,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.331626596Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.175679,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 6,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.331914395Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.207438,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-10",
+      "axis": "assets",
+      "rep": 7,
+      "warmup": false,
+      "assets": 10,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.332243231Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336472576
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.192811,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 0,
+      "warmup": true,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.334852795Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.193532,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 1,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.335172274Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.16016,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 2,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.335468208Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.152826,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 3,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.335734577Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.188793,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 4,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.336089752Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.191799,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 5,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.336428496Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.178064,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 6,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.336735321Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.195286,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "n-1000",
+      "axis": "assets",
+      "rep": 7,
+      "warmup": false,
+      "assets": 1000,
+      "cases": 500,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.337113479Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336067072
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.183553,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.33787712Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.194986,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.338178304Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.175579,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.338456725Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.157975,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.338701674Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.165009,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.338997528Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.306914,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.339614513Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.18136,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.339936857Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.204022,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-50",
+      "axis": "cases",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 50,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.340287193Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336026112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.174828,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.346134114Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.165319,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.346428365Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.175138,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.346781036Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.199243,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.347135409Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.172243,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.347455249Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.169698,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.347796879Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.199223,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.34816058Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.172112,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "m-5000",
+      "axis": "cases",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 5000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.348471562Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336464384
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.174467,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.350339891Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.148438,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.35061151Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.15976,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.350893298Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.19803,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.351215602Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.156222,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.351494594Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.154579,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.351769729Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.154649,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.352068028Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.157324,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-1",
+      "axis": "concurrency",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 1,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.352347331Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15336095744
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.160781,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 0,
+      "warmup": true,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.355681055Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.275366,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 1,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.356123474Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.1707,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 2,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.356417164Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.163896,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 3,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.356698731Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.170008,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 4,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.357006788Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.172082,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 5,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.357355141Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.17089,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 6,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.357663919Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.183313,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "c-64",
+      "axis": "concurrency",
+      "rep": 7,
+      "warmup": false,
+      "assets": 100,
+      "cases": 500,
+      "concurrency": 64,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:25.357983898Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15334490112
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.190727,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "mem-1m",
+      "axis": "memory",
+      "rep": 0,
+      "warmup": false,
+      "assets": 1,
+      "cases": 1000000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:26.331477052Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15357177856
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15357202432
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.257913,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "mem-1m",
+      "axis": "memory",
+      "rep": 1,
+      "warmup": false,
+      "assets": 1,
+      "cases": 1000000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:26.331979062Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15357202432
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15357202432
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.172874,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    },
+    {
+      "config_id": "mem-1m",
+      "axis": "memory",
+      "rep": 2,
+      "warmup": false,
+      "assets": 1,
+      "cases": 1000000,
+      "concurrency": 8,
+      "agent": "fake:",
+      "started_at": "2026-10-19T08:56:26.332311235Z",
+      "host_before": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15357202432
+      },
+      "host_after": {
+        "load_avg_1": 0.35,
+        "free_mem_bytes": 15357202432
+      },
+      "stages": [
+        {
+          "stage": "baseline",
+          "wall_ms": 0.16029,
+          "peak_rss_bytes": 0,
+          "exit_code": 0,
+          "spend_usd": null,
+          "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+        }
+      ],
+      "error": "exec dist/kno: fork/exec dist/kno: no such file or directory"
+    }
+  ]
+}
